@@ -1,0 +1,427 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#banner,
+.rate {
+  background-color: #fad046;
+}
+
+.bannerset {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 0 auto;
+  width: 87%;
+  padding-top: 1%;
+  font-size: 1.125rem;
+}
+.bannerimage {
+  position: relative;
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 7%;
+  border-radius: 20px 0px;
+}
+
+.brand {
+  float: left;
+  padding: 20px;
+  margin: 0px;
+  color: #0055a0;
+  font-weight: 1200;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: #263628;
+  font-weight: bold;
+  text-align: center;
+  padding: 28px;
+  text-decoration: none;
+}
+
+li a:hover,
+.checked {
+  color: #0055a0;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  padding-left: 4px;
+  margin-bottom: 2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn {
+  background: #0055a0;
+  border-radius: 6px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 19px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #fad046;
+  color: #0055a0;
+  text-decoration: none;
+  border: 2px solid #0055a0;
+}
+
+.introset {
+  margin: 0 auto;
+  content: "";
+  clear: both;
+  display: table;
+  width: 82%;
+}
+
+.introinfo {
+  float: left;
+  width: 60%;
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  padding-bottom: 7%;
+}
+
+.introinfo h2 {
+  font-size: 3.75em;
+  font-weight: bolder;
+}
+
+.services {
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services > h2 {
+  padding: 0;
+  margin: 2%;
+  font-size: 40px;
+}
+
+.services > p {
+  padding: 0;
+  margin-top: 4%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0055a0;
+}
+
+.introinfo p,
+button {
+  margin: 5%;
+}
+
+.cardparent {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4%;
+  margin: 3%;
+}
+
+.card {
+  text-align: left;
+  width: 27%;
+  margin: 3%;
+}
+
+.card > img {
+  width: 20%;
+}
+
+.ratingimage {
+  width: 40%;
+  position: relative;
+  left: 10%;
+  padding: 5%;
+  padding-right: 1%;
+  border-radius: 90px;
+}
+
+.ratingabout {
+  width: 45%;
+  float: right;
+  padding-top: 3.5%;
+  padding-right: 5.5%;
+  padding-bottom: 7%;
+}
+
+.ratingabout > h3 {
+  font-weight: bolder;
+  color: #0055a0;
+}
+
+.ratingabout > h2 {
+  margin: 0%;
+  font-size: 40px;
+}
+
+.rate2 {
+  content: "";
+  clear: both;
+  display: table;
+  width: 87%;
+  margin: 0 auto;
+}
+.rate {
+  content: "";
+  clear: both;
+  display: table;
+}
+.process {
+  width: 82%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process > h2 {
+  padding: 0;
+  margin: 2%;
+  font-size: 40px;
+}
+
+.process > p {
+  padding: 0;
+  margin-top: 4%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #0055a0;
+}
+
+.processimg {
+  display: flex;
+  margin: 10% auto;
+  width: 80%;
+}
+
+.processimg > div > img {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.processimg > img {
+  width: 8%;
+  height: 4%;
+  margin: 0 auto;
+}
+
+.processimg > div > p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.testimo {
+  text-align: center;
+  width: 27%;
+  margin: 3%;
+  padding: 2%;
+  line-height: 25px;
+  border: 0.02px solid rgb(173, 171, 171);
+}
+
+.footer {
+  background-color: #263238;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+  color: #f1f1f1;
+  padding: 2% 0%;
+}
+.icon {
+  display: none;
+}
+.footer > div {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  width: 23%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .icon {
+    display: block;
+    line-height: 80px;
+    float: right;
+  }
+  .introinfo h2 {
+    font-size: 2.25em;
+    font-weight: bolder;
+  }
+  .services > h2,
+  .process > h2,
+  .ratingabout > h2 {
+    font-size: 30px;
+  }
+  ul {
+    width: 90%;
+    float: none;
+    display: none;
+  }
+  li {
+    float: none;
+    display: block;
+  }
+  li a {
+    display: block;
+  }
+  .brand {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer p {
+    font-size: 15px;
+  }
+  .footer h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .introset,
+  .introinfo,
+  .services,
+  .card,
+  .cardparent,
+  .ratingabout,
+  .testimo,
+  .footer > div {
+    display: block;
+    width: 100%;
+  }
+  .card,
+  .cardparent,
+  .processimg {
+    margin: 0%;
+  }
+  .processimg > div > p {
+    font-size: 15px;
+  }
+  .introinfo h2 {
+    font-size: 1.7em;
+    margin: 5%;
+  }
+  .brand {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 14px;
+  }
+  .bannerimage {
+    display: block;
+    padding-bottom: 3%;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .services > h2,
+  .process > h2,
+  .ratingabout > h2,
+  .services > p,
+  .process > p {
+    font-size: 20px;
+  }
+  .cardparent {
+    margin: 8%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .card {
+    width: 80%;
+    padding: 3%;
+  }
+  li a {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .ratingimage {
+    display: block;
+    position: static;
+    width: 95%;
+    border-radius: 90px;
+  }
+  .ratingabout {
+    padding: 8%;
+  }
+  .processimg {
+    width: 100%;
+    padding: 2%;
+    padding-top: 10%;
+  }
+  .processimg > div > img {
+    width: 39px;
+  }
+  .testimo {
+    margin: 0%;
+    margin-bottom: 8%;
+  }
+  .footer > div > p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer {
+    margin: 0%;
+    padding: 0%;
+  }
+  .dropdown-content {
+    left: 30%;
+    top: 27%;
+  }
+}
