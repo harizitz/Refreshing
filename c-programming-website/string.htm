@@ -1,0 +1,213 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+    <body>
+        <center><h2>String programs</h2></center>
+        <ol>
+            <li>Eg:print the string</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+                <p>char S[]="Harish";</p>
+                <p>int i=0;</p>
+                <p>while(i<=5)</p>
+            <p>{</p>
+                    <p>printf("%c",S[i]);//i=0,S[0]=H,increment,S[1]=a increment,S[2]=r,so upto index value 5 increments and print the string</p>
+                    <p>i++;</p>
+                <p>}</p>
+                <p>output:</p>
+                <p>Harish</p>
+                <li>Eg:print the lower case alphabet</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>int i;</p>
+            <p>scanf("%s",S);</p>
+            <p>for(i=0;i < strlen(S);i++)</p>
+            <p>{</p>
+                <p>if(S[i]>=97&&S[i]<=122)</p>
+                <p>printf("%c",S[i]);//ascii value for a=97 and for z=122</p>
+            <p>}</p>
+            <p>}</p>
+            <p>input:</p>
+            <p>Lion</p>
+            <p>output:</p>
+            <p>ion</p>
+            <li>Eg:print the upper case alphabet</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>int i;</p>
+            <p>scanf("%s",S);</p>
+            <p>for(i=0;i < strlen(S);i++)</p>
+            <p>{</p>
+                <p>if(S[i]>=65&&S[i]<=90)</p>
+                <p>printf("%c",S[i]);//ascii value for A=65 and for Z=90</p>
+            <p>}</p>
+            <p>}</p>
+            <p>input:</p>
+            <p>ElEphant</p>
+            <p>output:</p>
+            <p>EE</p>
+            <li>Eg:print only alphabets</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>int i;</p>
+            <p>scanf("%s",S);</p>
+            <p>for(i=0;i < strlen(S);i++)</p>
+            <p>{</p>
+                <p>if(S[i]>=65&&S[i]<=90||S[i]>=97&&S[i]<=122)</p>
+                <p>printf("%c",S[i]);</p>
+            <p>}</p>
+            <p>}</p>
+            <p>input:</p>
+            <p>Doll@r</p>
+            <p>output:</p>
+            <p>Dollr</p>
+            <li>Eg:print only numbers</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>int i;</p>
+            <p>scanf("%s",S);</p>
+            <p>for(i=0;i < strlen(S);i++)</p>
+            <p>{</p>
+                <p>if(S[i]>=48&&S[i]<=58)</p>
+                <p>printf("%c",S[i]);//Ascii value for 0 is 48 and 9 is 58</p>
+            <p>}</p>
+            <p>}</p>
+            <p>input:</p>
+            <p>dog168</p>
+            <p>output:</p>
+            <p>168</p>
+            <li>Eg:print length of string</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>int i,len;</p>
+            <p>scanf("%s",S);</p>
+            <p>len=strlen(S);</p>
+            <p>printf("%d",len);</p>
+            <p>input:</p>
+            <p>welcome</p>
+            <p>output:</p>
+            <p>7</p>
+            <li>Eg:convert lower case into upper case</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>char S[1000]</p>
+            <p>scanf("%s",S);</p>
+            <p>int i;</p>
+            <p>for(i=0;i < strlen(S);i++)</p>
+            <p>{</p>
+                <p>if(S[i]>=97&&S[i]<=122)</p>
+                <p>{</p>
+                <p>printf("%c",S[i]-32);</p>
+                <p>}</p>
+                <p>else</p>
+                <p>{</p>
+                <p>printf("%c",S[i]);</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>String</p>
+                <p>output</p>
+                <p>STRING</p>
+                <li>compare the string1 and string2 with character</li>
+                <p>#include< stdio.h ></p>
+                    <p>#include < stdlib.h></p>
+                    
+                <p>int main()</p>
+                    <p>{</p>
+                    <p>char s1[101],s2[101],ch;</p>
+                    <p>scanf("%s\n%s\n%c",s1,s2,&ch);</p>
+                    <p>int i,j,c=0,c1=0;</p>
+                    <p>for(i=0;i< strlen(s1);i++)</p>
+                    <p>{</p>
+                    <p>if(s1[i]==ch)</p>
+                        <p>{</p>
+                        <p>0c++;</p>
+                        <p>}</p>
+                    <p>}</p>
+                        <p>for(j=0;j< strlen(s2);j++)</p>
+                    <p>{</p>
+                    <p>if(s2[j]==ch)</p>
+                        <p>{</p>
+                        <p>c1++;</p>
+                        <p>}</p>
+                    <p>}</p>
+                    <p>if(c < c1)</p>
+                    <p>{</p>
+                    <p>printf("%s",s2);</p>
+                    <p>}</p>
+                    <p>else if(c>c1)</p>
+                    <p>{</p>
+                        <p>printf("%s",s1);</p>
+                    <p>}</p>
+                    <p>else</p>
+                    <p>{</p>
+                        <p>printf("%s",s1);</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>input:</p>
+                    <p>aaabcde abcdef a</p>
+                    <p>output:</p>
+                    <p>aabcde</p>
+                    <li>Equal string length</li>
+                    <p>#include< stdio.h></p>
+                        <p>#include < stdlib.h></p>
+                        
+                        <p>int main()</p>
+                        <p>{</p>
+                        <p>char S1[1000],S2[1000];</p>
+                        <p>scanf("%s\n%s",S1,S2);</p>
+                        <p>int i,j,count=0,c=0;</p>
+                        <p>for(i=0;i< strlen(S1);i++)</p>
+                        <p>{</p>
+                           <p>for(j=0;j< strlen(S2);j++)</p>
+                           <p>{</p>
+                               <p>if(S1[i]==S2[j])</p>
+                               <p>{</p>
+                                   count++;
+                               <p>}</p>
+                           <p>}</p>
+                        <p>}</p>
+                        <p>if(count%2==0)</p>
+                        <p>{</p>
+                            <p>printf("%d",count/2);</p>
+                        <p>}</p>
+                           <p>else</p>
+                        <p>{</p>
+                            <p>printf("%d",(count/2)+2);</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input:</p>
+                        <p>jack cake</p>
+                        <p>output:</p>
+                        <p>3</p>
+            </ol>
+    </body>
+</html>

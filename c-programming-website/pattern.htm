@@ -1,0 +1,257 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+    <body>
+        <center><h2>Pattern</h2></center>
+            <ol>
+                <li>Eg:print the floyd triangle</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                    <p>int i,N,j;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>for(i=1;i<=N;i++) {</p>
+                    <p>for(j=1;j<=i;j++) {</p>
+                    <p>printf("* ");</p>
+                    <p>}</p>
+                    <p>printf("\n");</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>input: 5</p>
+                    <p>output: </p>
+                    <p>*</p>
+                    <p>* *</p>
+                    <p>* * *</p>
+                    <p>* * * *</p>
+                    <p>* * * * *</p>
+                    <li>Eg:print diagonal pattern</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                    <p>int i,N,j;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>for(i=1;i<=N;i++) {</p>
+                    <p>for(j=1;j<=N;j++) {</p>
+                    <p>if(i==j||i+j==N+1)</p>
+                    <p>printf("* ");</p>
+                    <p>else</p>
+                    <p>printf("# ");</p>
+                    <p>}</p>
+                    <p>printf("\n");</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>input: 5</p>
+                    <p>output: </p>
+                    <p>* # # # *</p>
+                    <p># * # * #</p>
+                    <p># # * # #</p>
+                    <p># * # * #</p>
+                    <p>* # # # *</p>
+                    <li>Eg:print increment pattern</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                    <p>int i,N,j,p=1;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>for(i=1;i<=N;i++) {</p>
+                    <p>for(j=1;j<=N;j++) {</p>
+                    <p>printf("%d ",p);</p>
+                    <p>p++;</p>
+                    <p>}</p>
+                    <p>printf("\n");</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>input: 5</p>
+                    <p>output: </p>
+                    <p>1 2 3 4 5</p>
+                    <p>6 7 8 9 10</p>
+                    <p>11 12 13 14 15</p>
+                    <p>16 17 18 19 20</p>
+                    <p>21 22 23 24 25</p>
+                    <li>Eg:print Reverse half pyramid</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                    <p>int i,N,j,p=1;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>for(i=N;i>=1;i--) {</p>
+                    <p>for(j=1;j<=i;j++) {</p>
+                    <p>printf("* ");</p>
+                    <p>}</p>
+                    <p>printf("\n");</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>input: 5</p>
+                    <p>output: </p>
+                    <p>* * * * *</p>
+                    <p>* * * *</p>
+                    <p>* * *</p>
+                    <p>* *</p>
+                    <p>*</p>
+                    <li>Eg:print two parts of triangle</li>
+                    <p>#include< stdio.h ></p>
+                    <p>#include< stdlib.h ></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int i,N,j,p=1;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>for(i=1;i<=N;i++) {</p>
+                        <p>for(j=1;j<=N;j++) {</p>
+                        <p>if(j<=i)</p>
+                        <p>printf("# ");</p>
+                        <p>else</p>
+                        <p>printf("$ ");</p>
+                        <p>}</p>
+                        <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input: 5</p>
+                        <p>output: </p>
+                        <p># $ $ $ $</p>
+                        <p># # $ $ $</p>
+                        <p># # # $ $</p>
+                        <p># # # # $</p>
+                        <p># # # # #</p>
+                        <li>Eg:print border of triangle</li>
+                    <p>#include< stdio.h ></p>
+                    <p>#include< stdlib.h ></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int i,N,j,p=1;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>for(i=1;i<=N;i++) {</p>
+                        <p>for(j=1;j<=N;j++) {</p>
+                        <p>if(i==1||j==1||i==N||j==N)</p>
+                        <p>printf("@");</p>
+                        <p>else</p>
+                        <p>printf("#");</p>
+                        <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input: 5</p>
+                        <p>output: </p>
+                        <p>@ @ @ @ @</p>
+                        <p>@ # # # @</p>
+                        <p>@ # # # @</p>
+                        <p>@ # # # @</p>
+                        <p>@ @ @ @ @</p>
+                        <li>Eg:print even row using *</li>
+                    <p>#include< stdio.h ></p>
+                    <p>#include< stdlib.h ></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int i,N,j,p=1;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>for(i=1;i<=N;i++) {</p>
+                        <p>for(j=1;j<=N;j++) {</p>
+                        <p>if(i%2==0)</p>
+                        <p>printf("* ");</p>
+                        <p>else</p>
+                        <p>printf("$ ");</p>
+                        <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input: 5</p>
+                        <p>output: </p>
+                        <p>$ $ $ $ $</p>
+                        <p>* * * * *</p>
+                        <p>$ $ $ $ $</p>
+                        <p>* * * * *</p>
+                        <p>$ $ $ $ $</p>
+                        <li>Eg:print odd column using *</li>
+                    <p>#include< stdio.h ></p>
+                    <p>#include< stdlib.h ></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int i,N,j,p=1;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>for(i=1;i<=N;i++) {</p>
+                        <p>for(j=1;j<=N;j++) {</p>
+                        <p>if(j%2==1)</p>
+                        <p>printf("* ");</p>
+                        <p>else</p>
+                        <p>printf("$ ");</p>
+                        <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input: 5</p>
+                        <p>output: </p>
+                        <p>* $ * $ *</p>
+                        <p>* $ * $ *</p>
+                        <p>* $ * $ *</p>
+                        <p>* $ * $ *</p>
+                        <p>* $ * $ *</p>
+                        <li>Eg:print middle row and col using *</li>
+                    <p>#include< stdio.h ></p>
+                    <p>#include< stdlib.h ></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int i,N,j,d,d1;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>d=N/2,d1=(N/2)+1;</p>
+                        <p>for(i=1;i<=N;i++) {</p>
+                        <p>for(j=1;j<=N;j++) {</p>
+                        <p>if(N%2==1){</p>
+                        <p>if(i==d1||j==d1)</p>
+                        <p>printf("* ");</p>
+                        <p>else</p>
+                        <p>printf("$ ");}</p>
+                        <p>else if(N%2==0){</p>
+                            <p>if(i==d||j==d)</p>
+                            <p>printf("* ");</p>
+                            <p>else</p>
+                            <p>printf("$ ");}</p>
+                            <p>}</p>
+                        <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input: 5</p>
+                        <p>output: </p>
+                        <p>$ $ * $ $</p>
+                        <p>$ $ * $ $</p>
+                        <p>* * * * *</p>
+                        <p>$ $ * $ $</p>
+                        <p>$ $ * $ $</p>
+                    <li> Half reverse pyramid</li>
+                    <p>#include< stdio.h></p>
+                        <p> #include < stdlib.h> </p>
+                        
+                       <p> int main()</p>
+                        <p>{</p>
+                        <p>int N,i,j,p;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>for(i=1;i<=N;i++)</p>
+                        <p>{</p>
+                            <p>for(j=1;j<=i;j++)</p>
+                            <p>{</p>
+                            <p>p=i-j+1;</p>
+                                <p>printf("%d ",p);</p>
+                            <p>}</p>
+                            <p>printf("\n");</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input:</p>
+                        <p>5</p>
+                        <p>output:</p>
+                        <p>1</p>
+                        <p>2 1</p>
+                        <p>3 2 1</p>
+                        <p>4 3 2 1</p>
+                        <p>5 4 3 2 1</p>
+                        </ol>
+    </body>
+</html>

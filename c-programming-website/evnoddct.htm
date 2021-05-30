@@ -1,0 +1,69 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Even and Odd count follows</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,oddcount=0,evencount=0,i;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                                <p>if(a[i]%2==1)</p>
+                                <p>{</p>
+                                    <p>oddcount++;</p>
+                                <p>}</p>
+                                <p>else</p> 
+                                <p>{</p>
+                                    <p>evencount++;</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>if(evencount>oddcount)</p>
+                            <p>{</p>
+                                <p>for(i=0;i< N;i++)</p>
+                                <p>{</p>
+                                    <p>if(a[i]%2==0)</p>
+                                        <p>printf("%d ",a[i]);</p>
+                                 <p>}</p>
+                                <p>for(i=0;i< N;i++)</p>
+                                <p>{</p>  
+                                    <p>if(a[i]%2==1)</p>
+                                        <p>rintf("%d ",a[i]);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>else if(evencount<=oddcount)</p>
+                            <p>{</p>
+                                <p>for(i=0;i< N;i++)</p>
+                                <p>{</p>
+                                    <p>if(a[i]%2==1)</p>
+                                    <p>printf("%d ",a[i]);</p>
+                                <p>}</p>
+                                <p>for(i=0;i< N;i++)</p>
+                                <p>{</p>
+                                    <p>if(a[i]%2==0)</p>
+                                    <p>printf("%d ",a[i]);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>1 2 3 4 5</p>
+                            <p>output:</p>
+                            <p>1 3 5 2 4</p>
+                        </body>
+</html>
+                            

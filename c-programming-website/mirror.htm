@@ -1,0 +1,56 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Mirror of Array</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N;</p>
+                            scanf("%d",&N);</p>
+                            int a[N],b[N],i,j,f=0,h;</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(j=0;j< N;j++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&b[j]);</p>
+                            <p>}</p>
+                            <p>for(i=0,j=N-1;i< N,j>=0;i++,j--)</p>
+                            <p>{</p>
+                                    <p>if(a[i]==b[j])</p>
+                                    <p>{</p>
+                                        <p>f++;</p>
+                                    <p>}</p>
+                                    <p>else</p>
+                                    <p>{</p>
+                                        <p>f=0;</p>
+                                    <p>}</p>
+                                <p>}</p>
+                            <p>if(f==N)</p>
+                            <p>{</p>
+                                <p>printf("1");</p>
+                            <p>}</p>
+                            <p>else</p>
+                            <p>{</p>
+                                <p>printf("0");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>1 2 3 4 5</p>
+                            <p>5 4 3 2 1</p>
+                            <p>output:</p>
+                            <p>1</p>

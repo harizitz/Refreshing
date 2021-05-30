@@ -1,0 +1,46 @@
+<html>
+<style>
+    h1 {
+        font-size: 40px;
+        font-style: bold;
+    }
+
+    body {
+        font-size: 20px;
+        background-color: lightgrey;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Frequency of Alphabets</h1>
+    </center>
+    <p>#include< stdio.h>
+    </p>
+    <p>#include< stdlib.h>
+    </p>
+    <p>int main()</p>
+    <p>{</p>
+    <p>char S[1000],t,f=0;</p>
+    <p>int i,j,x;</p>
+    <p>scanf("%s",S);</p>
+    <p>int freq[26]={0},y;</p>
+    <p>for(i=0;i< strlen(S);i++)</p> <p>{</p>
+    <p>x=S[i]-'a';</p>
+    <p>freq[x]++;</p>
+    <p>}</p>
+    <p>for(i=0;i< strlen(S);i++)</p> <p>{</p>
+    <p>x=S[i]-'a';</p>
+    <p>if(freq[x]==1)</p>
+    <p>{</p>
+    <p>printf("%c",S[i]);</p>
+    <p>}</p>
+
+    <p>}</p>
+
+    <p>}</p>
+    <p>input:</p>
+    <p>carrom</p>
+    <p>output:</p>
+    <p>caom</p>

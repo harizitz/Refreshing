@@ -1,0 +1,44 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Trim String</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>char S1[100],S2[100];</p>
+                            <p>scanf("%s %s",S1,S2);</p>
+                            <p>int i,j,a,b,d;</p>
+                            <p>a=strlen(S1);</p>
+                            <p>b=strlen(S2);</p>
+                            <p>d=abs(a-b);</p>
+                            <p>if(a>b)</p>
+                               <p>{for(i=0;i< a-d;i++)</p>
+                                <p>printf("%c",S1[i]);</p>
+                                <p>printf(" ");</p>
+                                <p>for(i=0;i< b;i++)</p>
+                                <p>printf("%c",S2[i]);}</p>
+                            <p>else if(a< b)</p>
+                                <p>{for(i=0;i< a;i++)</p>
+                                <p>printf("%c",S1[i]);</p>
+                                <p>printf(" ");</p>
+                                <p>for(i=0;i< b-d;i++)</p>
+                                <p>printf("%c",S2[i]);}</p>
+                            <p>else</p>
+                                <p>{printf("%s %s",S1,S2);}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>Iron Man</p>
+                            <p>output:</p>
+                            <p>Iro Man</p>

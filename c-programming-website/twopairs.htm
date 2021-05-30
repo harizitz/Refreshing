@@ -1,0 +1,34 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Two pairs equal to N</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,X,Y,i,c=0,j;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>X=1,Y=N-1;</p>
+                            <p>for(i=X,j=Y;i<=N,j>=1;i++,j--)</p>
+                            <p>{</p>
+                                <p>if(i+j==N)</p>
+                                <p>{</p>
+                                    <p>c++;<p>
+                                <p>}</p>
+                            <p>}</p>             //1stpair//2ndpair==N count
+                            <p>printf("%d",c);</p>//1 2 3 4//4 3 2 1
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>4</p>

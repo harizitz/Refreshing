@@ -1,0 +1,45 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>First half and second half sum</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int N,c=0,i=0,j,d,S=0,S1=0;</p>
+                            <p>int a[1000];</p>
+                            <p>while(scanf("%d ",&N)>0)</p>
+                            <p>{</p>
+                                <p>a[i]=N;</p>
+                                <p>i++;</p>
+                                <p>N=N/10;</p>
+                            <p>}</p>
+                            <p>for(j=0;j< i;j++)</p>
+                            <p>{</p>
+                            <p>c++;</p>
+                            <p>}</p>
+                            <p>d=c/2;</p>
+                            <p>for(j=0;j< i;j++)</p>
+                            <p>{</p>
+                                <p>if(j< d)//first half condition</p>
+                                    <p>S=S+a[j];//sum</p>
+                                <p>else// second half</p>
+                                    <p>S1=S1+a[j];//sum</p>
+                            <p>}</p>
+                            <p>printf("%d",S*S1);//first half sum * second half sum </p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>1 2 3 4</p>
+                            <p>output:</p>
+                            <p>21</p>

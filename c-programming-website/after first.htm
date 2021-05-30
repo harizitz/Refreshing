@@ -1,0 +1,44 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Matrix sum of x row and column</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,X,c=0,c1=0,f=0;</p>
+                            <p>scanf("%d %d",&N,&X);</p>
+                            <p>int a[N],i,j;</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(i=0;i< N;i++)<p>
+                            <p>{</p>
+                                <p>if(a[i]==X)</p>
+                                <p>{</p>
+                                    <p>c=1;</p>
+                                <p>}</p>
+                                    <p>if(c==1&&(a[i]>X&&a[i]%X==0))</p>
+                                    <p>{</p>
+                                        <p>c1++;</p>
+                                    <p>}</p>
+                            <p>}</p>
+                            <p>printf("%d",c1);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5 10</p>
+                            <p>15 10 20 30 40</p>
+                            <p>output:</p>
+                            <p>3</p>

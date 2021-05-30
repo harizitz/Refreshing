@@ -1,0 +1,46 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>3 factors count</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int a,b,i,j,c=0,f=0,k,c1=0,d;</p>
+                            <p>scanf("%d %d",&a,&b);</p>
+                            <p>d=pow(10,6);</p>
+                            <p>for(i=a;i<=b;i++)</p>
+                            <p>{</p>
+                                <p>c=0;</p>
+                                <p>for(j=1;j< d;j++)</p>
+                                <p>{</p>
+                                <p>if(i%j==0)</p>
+                                    <p>c++;</p>
+                                <p>}</p>
+                                <p>c1++;</p>
+                                <p>if(c==3)</p>
+                                <p>printf("%d ",i);</p>
+                                <p>else</p>
+                                <p>f++;</p>
+                                
+                            <p>}</p>
+                            <p>if(f==c1)</p>
+                            <p>{</p>
+                                <p>printf("-1");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5 100</p>
+                            <p>output:</p>
+                            <p>9 25 49</p>

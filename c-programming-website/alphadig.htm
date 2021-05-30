@@ -1,0 +1,41 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>print Alphabets and Digits</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>char S[1000];</p>
+                            <p>int i;</p>
+                            <p>scanf("%[^\n]",S);</p>
+                            <p>for(i=0;i< strlen(S);i++)</p>
+                            <p>{</p>
+                                <p>if(isalpha(S[i]))</p>
+                                <p>{</p>
+                                    <p>printf("%c",S[i]);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(i=0;i< strlen(S);i++)</p>
+                            <p>{</p>
+                                <p>if(S[i]>='0'&&S[i]<='9')</p>
+                                <p>{</p>
+                                    <p>printf("%c",S[i]);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>captain America123#$%</p>
+                            <p>ouput:</p>
+                            <p>captain America123</p>

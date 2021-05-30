@@ -1,0 +1,52 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Integer repeat pattern</h1></center>
+        <p>#include< stdio.h></p>
+                <p>#include < stdlib.h></p>
+                
+                <p>int main()</p>
+                <p>{</p>
+                <p>int N,i,j,p,k,a,b,d;</p>
+                <p>scanf("%d",&N);</p>
+                <p>p=N,k=N;</p>
+                <p>a=N+1,b=N+2,d=1;</p>
+                <p>for(i=1;i<=N+2;i++)</p>
+                <p>{</p>
+                    <p>for(j=1;j<=N+1;j++)</p>
+                    <p>{</p>
+                        <p>if(i==N+2)</p>
+                        <p>{</p>
+                        <p>printf("%d",k);</p>
+                        <p>}</p>
+                        <p>else if(j==a-1&&i!=1&&i!=b)</p>
+                        <p>{</p>
+                            <p>printf("%d",d);</p>
+                            <p>d++;</p>
+                        <p>}</p>
+                        <p>else</p>
+                        <p>{</p>
+                            <p>printf("%d",p);</p>
+                        <p>}</p>
+                    <p>}</p>
+                    <p>p++;</p>
+                        <p>printf("\n");</p>
+                <p>}</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>3333</p>
+                <p>4414</p>
+                <p>5525</p>
+                <p>6636</p>
+                <p>3333</p>

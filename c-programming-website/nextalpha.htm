@@ -1,0 +1,39 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Next N alphabets</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int N;
+                            <p>scanf("%d",&N);</p>
+                            <p>char a[N],i;
+                            <p>for(i=0;i< N+1;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%c ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(i=1;i< N+1;i++)</p>
+                            <p>{</p>
+                                <p>if(a[i]!='z')</p>
+                                <p>printf("%c ",a[i]+1);</p>
+                                <p>else</p>
+                                <p>printf("a ");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>a z d f k</p>
+                            <p>output:</p>
+                            <p>b a e g l</p>

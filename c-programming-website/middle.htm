@@ -1,0 +1,51 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Sorted array Middle Element</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                    <p>int N;</p>
+                        <p>scanf("%d",&N);</p>
+                        <p>int a[N],t,i,j;</p>
+                        <p>for(i=0;i< N;i++)</p>
+                        <p>{</p>
+                            <p>scanf("%d ",&a[i]);</p>
+                        <p>}</p>
+                        <p>for(i=0;i< N;i++)</p>
+                        <p>{</p>
+                            <p>for(j=i+1;j< N;j++)</p>
+                            <p>if(a[i]>a[j])</p>
+                            <p>{</p>
+                               <p>t=a[i];</p>
+                                <p>a[i]=a[j];</p>
+                                <p>a[j]=t;</p>
+                            <p>}</p>
+                            
+                        <p>}</p>
+                        <p>if(N%2!=0)</p>
+                        <p>{</p>
+                        <p>printf("%d ",a[N/2]);</p>
+                        <p>}</p>
+                        <p>else</p>
+                        <p>{</p>
+                            <p>printf("%d %d",a[N/2-1],a[N/2]);</p>
+                        <p>}</p>
+                        <p>}</p>
+                        <p>input:</p>
+                        <p>5</p>
+                        <p>4 3 6 2 5</p>
+                        <p>output:</p>
+                        <p>4</p>

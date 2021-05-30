@@ -1,0 +1,68 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Sort pass stud by Name</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,j,S=0,avg,k,p=0,k1,c=0;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>char a[100][100],t[100],b[100][100];</p>
+                            <p>int a1[N],b1[N],c1[N];</p>
+                            <p>for(i=0,j=0,p=0;i< N,j< N;i++,j++)</p>
+                            <p>{</p>
+                                <p>scanf("%s %d %d %d",a[i],&a1[j],&b1[j],&c1[j]);</p>
+                            <p>}</p>
+                            <p>for(i=0,j=0;i< N,j< N;i++,j++)</p>
+                            <p>{</p>
+                                <p>S=(a1[j]+b1[j]+c1[j]);</p>
+                                <p>avg=(a1[j]+b1[j]+c1[j])/3;</p>
+                                <p>if(S>=150&&avg>=40)</p>
+                                <p>{</p>
+                                    <p>strcpy(b[p],a[i]);</p>
+                                    <p>p++;</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(k=0;k< p;k++)</p>
+                            <p>{</p>
+                                <p>for(k1=k+1;k1< p;k1++)</p>
+                                <p>{</p>
+                                    <p>if(strcmp(b[k],b[k1])>0)</p>
+                                    <p>{</p>
+                                        strcpy(t,b[k1]);
+                                        strcpy(b[k1],b[k]);
+                                        strcpy(b[k],t);
+                                    <p>}</p>
+                                    <p>else if(strcmp(b[k],b[k1])==0)</p>
+                                    <p>{</p>
+                                        <p>strcpy(t,b[k]);</p>
+                                        <p>strcpy(b[k],b[k1]);</p>
+                                        <p>strcpy(b[k1],t);</p>
+                                    <p>}</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(k=0;k< p;k++)</p>
+                            <p>{</p>
+                                <p>printf("%s\n",b[k]);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>3</p>
+                            <p>harish 80 85 90</p>
+                            <p>babu 70 87 81</p>
+                            <p>siddarth 20 30 40</p>
+                            <p>output:</p>
+                            <p>babu</p>
+                            <p>harish</p>

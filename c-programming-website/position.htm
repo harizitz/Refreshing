@@ -1,0 +1,55 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Position of largest and smallest element</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,max,min,p=0;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>max=a[0];</p>
+                            <p>min=a[0];</p>
+                            <p>for(i=1;i< N;i++)</p>
+                            <p>{</p>
+                                <p>if(a[i]< min)</p>
+                                <p>{</p>
+                                    <p>min=a[i];</p>
+                                <p>}</p>
+                                <p>if(a[i]>max)</p>
+                                <p>{</p>
+                                    <p>max=a[i];</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>if(a[i]==min)</p>
+                                    <p>printf("%d ",i+1);</p>
+                            <p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>if(a[i]==max)</p>
+                                <p>printf("%d",i+1);</p>
+                            <p>}</p>
+                            }</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>1 2 3 5 4</p>
+                            <p>output:</p>
+                            <p>1 4</p>

@@ -1,0 +1,43 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Same position Elements</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,j;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>int a[N],b[N];</p>
+                    <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                            <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(j=0;j< N;j++)</p>
+                            <p>{</p>
+                            <p>scanf("%d ",&b[j]);</p>
+                            <p>}</p>
+                            <p>for(i=0,j=0;i< N,j< N;i++,j++)</p>
+                            <p>{</p>
+                                printf("%d %d\n",a[i],b[j]);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>3</p>
+                            <p>1 2 3</p>
+                            <p>4 5 6</p>
+                            <p>output:</p>
+                            <p>1 4</p>
+                            <p>2 5</p>
+                            <p>3 6</p>

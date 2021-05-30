@@ -1,0 +1,44 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Factors count max</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N;</p>
+                    <p>scanf("%d",&N);</p>
+                    <p>int a[N],i,j,c=0,max=0;</p>
+                    <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                            <p>c=0;</p>
+                            <p>scanf("%d",&a[i]);</p>
+                            <p>for(j=1;j<=1000;j++)</p>
+                            <p>{</p>
+                            <p>if(a[i]%j==0)</p>
+                                <p>{</p>
+                                    <p>c++;</p>
+                                    <p>if(c>max)</p>
+                                    <p>{</p>
+                                        <p>max=c;</p>
+                                    <p>}</p>
+                                <p>}}</p>
+                            <p>}</p>
+                            <p>printf("%d",max);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>3</p>
+                            <p>10 20 30</p>
+                            <p>output:</p>
+                            <p>8</p>

@@ -1,0 +1,41 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Largest Floating point Numbers</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>float A,B,C,p,i,j,k;</p>
+                            <p>scanf("%f %f %f",&A,&B,&C);</p>
+                            <p>i=A-trunc(A);</p>//trunc removes point after numbers
+                            <p>j=B-trunc(B);</p>
+                            <p>k=C-trunc(C);</p>
+                            <p>if(j>i&&j>k)</p>
+                            <p>{</p>
+                                <p>printf("%.2f",B);</p>
+                            <p>}</p>
+                            <p>else if(i>j&&i>k)</p>
+                            <p>{</p>
+                                <p>printf("%.2f",A);</p>
+                            <p>}</p>
+                            <p>else if(k>i&&k>j)</p>
+                            <p>{</p>
+                                printf("%.2f",C);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>19.34 12.98 10.45</p>
+                            <p>output:</p>
+                            <p>12.98</p>

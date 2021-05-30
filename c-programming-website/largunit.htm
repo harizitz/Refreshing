@@ -1,0 +1,51 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Largest unitdigit in Array</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,d,b,max=0;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>d=a[i];</p>
+                               <p>while(d)</p> 
+                               <p>{</p>
+                                   <p>b=a[i]%10;</p>
+                                   <p>if(b>max)</p>
+                                    <p>{</p>
+                                       <p>max=b;</p>
+                                   <p>}</p>
+                                   <p>d=d/10;</p>
+                               <p>}</p>
+                            <p>}</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>d=a[i]%10;</p>
+                                <p>if(d==max)</p>
+                                <p>printf("%d ",a[i]);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>12 34 56 31 89</p>
+                            <p>output:</p>
+                            <p>89</p>

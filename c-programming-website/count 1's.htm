@@ -1,0 +1,46 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Matrix Max 1's count</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int R,C,c1=0,i,j,max=0;</p>
+                            <p>scanf("%d %d",&R,&C);</p>
+                            <p>int a[R][C];</p>
+                            <p>for(i=0;i< R;i++)</p>
+                            <p>{</p>
+                                <p>for(j=0;j< C;j++)</p>
+                                <p>scanf("%d ",&a[i][j]);</p>
+                            <p>}</p>
+                            <p>for(i=0;i< R;i++)</p>
+                            <p>{   c1=0;</p>
+                                <p>for(j=0;j< C;j++)</p>
+                                <p>{</p>
+                                    <p>if(a[i][j]==1)</p>
+                                    <p>c1++;</p>
+                                    <p>if(c1>max)</p>
+                                    <p>max=c1;</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>printf("%d",max);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>3</p>
+                            <p>1 2 3</p>
+                            <p>4 5 6</p>
+                            <p>7 8 9</p>
+                            <p>output:</p>
+                            <p>2</p>

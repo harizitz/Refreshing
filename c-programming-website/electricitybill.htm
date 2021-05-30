@@ -1,0 +1,50 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Electricity Bill</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>double X,i,e,g;</p>
+                            <p>scanf("%lf",&X);</p>
+                            <p>if(X>=1&&X<=100)</p>
+                            <p>{</p>
+                                <p>e=X*2;</p>
+                                <p>g=e/10;</p>
+                                <p>printf("%.2lf",e+g);</p>
+                            <p>}</p>
+                            <p>else if(X>=101&&X<=200)</p>
+                            <p>{</p>
+                                e=X*3.5;</p>
+                                g=e/10;</p>
+                                printf("%.2lf",e+g);</p>
+                            <p>}</p>
+                            <p>else if(X>=201&&X<=500)</p>
+                            <p>{</p>
+                                <p>e=X*4.5;</p>
+                                <p>g=e/10;</p>
+                                <p>printf("%.2lf",e+g);</p>
+                            <p>}</p>
+                            <p>else if(X>500)</p>
+                            <p>{</p>
+                                <p>e=X*6;</p>
+                                <p>g=e/10;</p>
+                            <p>printf("%.2lf",e+g);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>100</p>
+                            <p>output:</p>
+                            <p>220.00</p>

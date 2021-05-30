@@ -1,0 +1,63 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Delete duplicates and Sort</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i=0,b,j,t,k,b1;</p>
+                            <p>int a[200];</p>
+                            <p>while(scanf("%d ",&N)>0)</p>
+                            <p>{</p>
+                                <p>a[i]=N;</p>
+                                <p>i++;</p>
+                            <p>}</p>
+                            <p>for(b=0;b< i;b++)</p>
+                            <p>{</p>
+                                <p>for(j=b+1;j< i;j++)</p>
+                                <p>{</p>
+                                    <p>if(a[b]==a[j])</p>
+                                    <p>{</p>
+                                    <p>for(k=j;k< i;k++)</p>
+                                    <p>{</p>
+                                        <p>a[k]=a[k+1];</p>
+                                    <p>
+                                    <p>i--;</p>
+                                    <p>j--;</p>
+                                    <p>}</p>
+                                    
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(b=0;b< i;b++)</p>
+                            <p>{</p>
+                                <p>for(b1=b+1;b1< i;b1++)</p>
+                                <p>{</p>
+                                    <p>if(a[b]>a[b1])</p>
+                                    <p>{</p>
+                                        <p>t=a[b];</p>
+                                        <p>a[b]=a[b1];</p>
+                                        <p>a[b1]=t;</p>
+                                    <p>}</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(b=0;b< i;b++)</p>
+                            <p>{</p>
+                                <p>printf("%d ",a[b]);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>50 60 70 80 90 20 60</p>
+                            <p>output:</p>
+                            <p>20 50 60 70 80 90</p>

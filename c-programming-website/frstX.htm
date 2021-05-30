@@ -1,0 +1,48 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>First X and Last X Sum</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,X,i,S=0,S1=0,j;</p>
+                            <p>scanf("%d\n",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>scanf("%d",&X);</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>if(i< X)</p>
+                                <p>{</p>
+                                    <p>S=S+a[i];</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>for(j=N-1;j>=N-X;j--)</p>
+                            <p>{</p>
+                                <p>S1=S1+a[j];</p>
+                            <p>}</p>
+                            <p>printf("%d",S+S1);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>1 2 3 4 5</p>
+                            <p>2</p>
+                            <p>output:</p>
+                            <p>12</p>
+            </body>
+            </html>

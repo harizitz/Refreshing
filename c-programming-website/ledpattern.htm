@@ -1,0 +1,111 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>LED Pattern</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                    <p>int M,N;</p>
+                    <p>scanf("%d %d",&M,&N);</p>
+                    <p>int i,j;</p>
+                    <p>for(i=1;i<=N;i++)</p>
+                    <p>{</p>
+                        <p>for(j=1;j<=N;j++)</p>
+                        <p>{</p>
+                            <p>if(M==1)</p>
+                            <p>{</p>
+                                <p>if(j==N)</p>
+                               <p>printf("%d",M);</p>
+                               <p>else</p>
+                               <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==2)</p>
+                            <p>{</p>
+                                <p>if(i==1||i==N||i==(N/2)+1||j==N&&i<(N/2)+1||j==1&&i>(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==3)</p>
+                            <p>{</p>
+                                <p>if(i==1||i==N||i==(N/2)+1||j==N)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==4)</p>
+                            <p>{</p>
+                                <p>if(i==(N/2)+1||j==1&&i<(N/2)+1||j==N)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                                <p>else if(M==5)</p>
+                            <p>{</p>
+                                <p>if(i==1||i==N||i==(N/2)+1||j==1&&i<(N/2)+1||j==N&&i>(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p><else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==6)</p>
+                            <p>{</p>
+                                <p>if(j==1||i==N||i==(N/2)+1||j==N&&i>(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==7)</p>
+                            <p>{</p>
+                                <p>if(i==1||j==N||i==(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==8)</p>
+                            <p>{</p>
+                                <p>if(j==1||i==N||i==1||j==N||i==(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                                <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==9)</p>
+                            <p>{</p>
+                                <p>if(j==N||i==1||i==(N/2)+1||j==1&&i<(N/2)+1)</p>
+                                <p>printf("%d",M);</p>
+                                <p>else</p>
+                            <p>printf("*");</p>
+                            <p>}</p>
+                            <p>else if(M==0)</p>
+                            <p>{</p>
+                                <p>if(i==1||i==N||j==1||j==N)</p>
+                                    <p>printf("%d",M);</p>
+                                    <p>else</p>
+                                    <p>printf("*");</p>
+                            <p>}</p>
+                        }
+                        <p>printf("\n");</p>
+                    <p>}</p>
+                       <p>}</p>
+                       <p>input:</p>
+                                <p>4 8</p>
+                        <p>output:</p>
+                        <p>4******4</p>
+                        <p>4******4</p>
+                        <p>4******4</p>
+                        <p>4******4</p>
+                        <p>44444444</p>
+                        <p>*******4</p>
+                        <p>*******4</p>
+                        <p>*******4</p>

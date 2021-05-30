@@ -1,0 +1,58 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Concatenate two Digits</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>long long int M,N,p,q,k;</p>
+                            <p>scanf("%lld %lld",&M,&N);</p>
+                            <p>k=M%10;</p>
+                            <p>if(k<0)</p>
+                            <p>{</p>
+                            <p>if(-k==N)</p>
+                            <p>printf("%lld",M/10);</p>
+                            <p>else</p>
+                            <p>printf("%lld",(M*10)-N);</p>
+                            <p>}</p>
+                            <p>else if(k>0)</p>
+                            <p>{</p>
+                                <p>if(k==N)</p>
+                                <p>printf("%lld",M/10);</p>
+                                <p>else</p>
+                                <p>printf("%lld",(M*10)+N);</p>
+                            <p>}</p>
+                            <p>else if(k==0)</p>
+                            <p>{</p>
+                                <p>if(M<0)</p>
+                                <p>{</p>
+                                <p>if(k!=N)</p>
+                                <p>printf("%lld",(M*10)-N);</p>
+                                <p>else</p>
+                                <p>printf("%lld",M/10);</p>
+                                <p>}</p>
+                                <p>else</p> 
+                                <p>{</p>
+                                    <p>if(k!=N)</p>
+                                    <p>printf("%lld",(M*10)+N);</p>
+                                    <p>else</p> 
+                                    <p>printf("%lld",M/10);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>100 3</p>
+                            <p>output:</p>
+                            <p>103</p>

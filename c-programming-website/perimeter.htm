@@ -1,0 +1,46 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>perimeter</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>long long int N,s,l,b,t1,t2,t3;</p>
+                            <p>scanf("%lld",&N);</p>
+                            <p>if(N==1)</p>
+                            <p>{</p>
+                                <p>scanf("%lld",&s);</p>
+                                <p>printf("%lld",s*4);</p>
+                            <p>}</p>
+                            <p>else if(N==2)</p>
+                            <p>{</p>
+                                <p>scanf("%lld %lld",&l,&b);</p>
+                                <p>printf("%lld",2*(l+b));</p>
+                            <p>}</p>
+                            <p>else if(N==3)</p>
+                            <p>{</p>
+                                <p>scanf("%lld %lld %lld",&t1,&t2,&t3);</p>
+                            <p>printf("%lld",t1+t2+t3);</p>
+                            <p>}</p>
+                            <p>else</p> 
+                            <p>{</p>
+                                printf("-1");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>2</p>
+                            <p>3 5</p>
+                            <p>output:</p>
+                            <p>16</p>

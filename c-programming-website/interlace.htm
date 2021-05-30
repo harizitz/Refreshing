@@ -1,0 +1,37 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Interlace odd/even program</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                <p>int main()</p>
+                <p>{</p>
+                </p>int A,B,i,j;</p>
+                <p>scanf("%d\n",&A);</p>
+                <p>scanf("%d",&B);</p>
+                <p>for(i=A,j=B;i<=B;i++,j--)</p>
+                <p>{</p>
+                    <p>if(i%2==1)</p>
+                    <p>{</p>
+                    <p>printf("%d ",i);</p>
+                    <p>}</p>
+                    <p>if(j%2==0)</p>
+                    <p>printf("%d ",j);</p>
+                <p>}</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>5</p>
+                <p>15</p>
+                <p>output:</p>
+                <p>5 14 7 12 9 10 11 8 13 6 15</p>

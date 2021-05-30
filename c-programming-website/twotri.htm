@@ -1,0 +1,78 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Two triangle Asterisk</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,j,d;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>d=(N/2)+1;</p>
+                            <p>for(i=1;i<=N;i++)</p>
+                            <p>{</p>
+                                <p>for(j=1;j<=N;j++)</p>
+                                <p>{</p>
+                                    <p>if(i< d&&j< d)</p>
+                                    <p>{</p>
+                                        <p>if(i>=j)</p>
+                                        <p>printf("*");</p>
+                                        <p>else</p>
+                                        <p>printf("  ");</p>
+                                    <p>}</p>
+                                    <p>else if(i< d&&j>d)</p>
+                                    <p>{</p>
+                                        <p>if(j-i<=d)</p>
+                                        <p>printf("*");</p>
+                                        <p>else</p>
+                                        <p>printf("  ");</p>
+                                    <p>}</p>
+                                    <p>else if(j==d&&i< d)</p>
+                                    <p>{</p>
+                                        <p>printf(" ");</p>
+                                    <p>}</p>
+                                    <p>else if(i==d)</p>
+                                    <p>{</p>
+                                        <p>printf("*");</p>
+                                    <p>}</p>
+                                    <p>else if(i>d&&j< d)</p>
+                                    <p>{</p>
+                                        <p>if((i+j-N)<=1)</p>
+                                        <p>printf("*");</p>
+                                        <p>else</p>
+                                        <p>printf("  ");</p>
+                                    <p>}</p>
+                                    <p>else if(i>d&&j==d)</p>
+                                    <p>{</p>
+                                        <p>printf(" ");</p>
+                                    <p>}</p>
+                                    <p>else if(i>d&&j>d)</p>
+                                    <p>{</p>
+                                        <p>if((i+j-d)< N+2)</p>
+                                        <p>printf("*");</p>
+                                        <p>else</p>
+                                        <p>printf("  ");</p>
+                                    <p>}</p>
+                                <p>}</p>
+                                <p>printf("\n");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>output:</p>
+                            <p>*   *</p>  
+                             <p>** **</p>
+                             <p>*****</p>
+                             <p>** **</p>
+                             <p>*   *  </p>

@@ -1,0 +1,46 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Zig Zag String</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>char S[1000];</p>
+                            <p>scanf("%s",S);</p>
+                            <p>int n=strlen(S),i,j,p=0,p1=n-1;</p>
+                            <p>for(i=1;i<=n;i++)</p>
+                            <p>{</p>
+                                <p>for(j=1;j<=n;j++)</p>
+                                <p>{</p>
+                                    <p>if(i==j)</p>
+                                        <p>printf("%c",S[p]);</p>
+                                    <p>else if(i+j==n+1)</p>
+                                        <p>printf("%c",S[p1]);</p>
+                                    <p>else if(i!=j||i+j!=n+1)</p>
+                                        <p>printf(" ");</p>
+                                <p>}</p>
+                                <p>p1--;</p>
+                                <p>p++;</p>
+                                <p>printf("\n");</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>mango</p>
+                            <p>output:</p>
+                            <p>m   o</p>
+                             <p>a g</p> 
+                              <p>n</p>  
+                             <p>a g</p> 
+                            <p>m   o</p>

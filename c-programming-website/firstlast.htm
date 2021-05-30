@@ -1,0 +1,52 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>first and last sum</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int N,S=0,i,j,p=0,d,b,c;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>d=N-1;</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>if(N%2==1)</p>
+                            <p>{</p>
+                                <p>b=(N/2);</p>
+                                <p>c=N-1;</p>
+                                <p>for(i=0,j=c;i< b,j>b;i++,j--)</p>
+                                <p>{</p>
+                                    <p>printf("%d ",a[i]+a[j]);</p>
+                                <p>}</p>
+                                <p>printf("%d ",a[b]);</p>
+                            <p>}</p>
+                            <p>else if(N%2==0)</p>
+                            <p>{</p>
+                                <p>b=(N/2);</p>
+                                 <p>c=N-1;</p>
+                                <p>for(i=0,j=c;i< b,j>=b;i++,j--)</p>
+                                <p>{</p>
+                                    <p>printf("%d ",a[i]+a[j]);</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>1 2 3 4 5</p>
+                            <p>output:</p>
+                            <p>6 6 3</p>

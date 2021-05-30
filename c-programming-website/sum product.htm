@@ -1,0 +1,36 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Sum and product equal to Digit</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int N,S=0,d,p=1,a,n;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>n=N;</p>
+                            <p>while(N)</p>
+                            <p>{</p>
+                                <p>d=N%10;</p>
+                                <p>S=S+d;</p>
+                                <p>p=p*d;</p>
+                                <p>N=N/10;</p>
+                            <p>}</p>
+                            <p>a=S+p;</p>
+                            <p>(a==n?printf("yes"):printf("no"));</p>//23 == 2+3+(2*3)==11
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>23</p>// 23 not equal 11
+                            <p>output:</p>
+                            <p>no</p>

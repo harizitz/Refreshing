@@ -1,0 +1,45 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Replace Middle Character</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>char S[1000];</p>
+                            <p>scanf("%s",S);</p>
+                            <p>int i,len=strlen(S),d,e;</p>
+                            <p>d=len/2;</p>
+                            <p>e=(len/2)-1;</p>
+                            <p>if(len%2==1){</p>
+                            <p>for(i=0;i< len;i++)</p>
+                            <p>{</p>
+                                <p>if(i==d)</p>
+                                <p>printf("*");</p>
+                                <p>else</p>
+                                <p>printf("%c",S[i]);</p>
+                            <p>}}</p>
+                            <p>else{</p>
+                            <p>for(i=0;i< len;i++)</p>
+                            <p>{</p>
+                                <p>if(i==d||i==e)</p>
+                                <p>printf("*");</p>
+                                <p>else</p>
+                                <p>printf("%c",S[i]);</p>
+                            <p>}}</p>
+                            }</p>
+                            <p>input:</p>
+                            <p>harish</p>
+                            <p>output:</p>
+                            <p>ha**sh</p>

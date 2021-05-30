@@ -1,0 +1,89 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+    <body>
+        <center><h1>while loop</h1></center>
+        <ol>
+            <li>Eg:increment number upto 10</li>
+            <p>#include< stdio.h ></p>
+            <p>#include< stdlib.h ></p>
+            <p>int main()</p>
+            <p>{</p>
+            <p>int i=1,n</p>
+            <p>scanf("%d",&n);</p>
+            <p>while(i<=n)</p>
+            <p>{</p>
+                <p>printf("%d ",i);</p>
+                <p>i++;</p>
+                <p>}</p>
+            <p>}</p>
+            <p>input:</p>
+            <p>10</p>
+            <p>output:</p>
+            <p>1 2 3 4 5 6 7 8 9 10</p>
+                <li>Eg:Reverse the numer</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                <p>int N,d,S=0;</p>
+                <p>scanf("%d",&N);</p>
+                <p>while(N)</p>
+                <p>{</p>
+                <p>d=N%10;</p>
+                <p>S=S*10+d;</p>
+                <p>N=N/10;</p>
+                <p>}</p>
+                <p>printf("%d",S);</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>1234</p>
+                <p>output:</p>
+                <p>4321</p>
+                <li>Eg:print range from X to Y</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                <p>int N,X,Y;</p>
+                <p>scanf("%d %d",&X,&Y);</p>
+                <p>while(X<=Y)</p>
+                <p>{</p>
+                <p>printf("%d ",X);</p>
+                <p>X++;</p>
+                <p>}</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>10 15</p>
+                <p>output:</p>
+                <p>10 11 12 13 14 15</p>
+                <li>Eg:print range from Y to X</li>
+                <p>#include< stdio.h ></p>
+                <p>#include< stdlib.h ></p>
+                <p>int main()</p>
+                <p>{</p>
+                <p>int N,X,Y;</p>
+                <p>scanf("%d %d",&X,&Y);</p>
+                <p>while(Y>=X)</p>
+                <p>{</p>
+                <p>printf("%d ",Y);</p>
+                <p>Y--;</p>
+                <p>}</p>
+                <p>}</p>
+                <p>input:</p>
+                <p>15 10</p>
+                <p>output:</p>
+                <p>15 14 13 12 11 10</p>
+            </ol>
+    </body>
+</html>

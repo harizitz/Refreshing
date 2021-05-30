@@ -1,0 +1,41 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Absolute max difference of Number</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,M1=0,i,X,j;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(i=0,j=i+1;i< N,j< N;i++,j++)</p>
+                            <p>{</p>
+                                    <p>X=abs(a[i]-a[j]);</p>
+                                    <p>if(X>M1)</p>
+                                    <p>{
+                                        <p>M1=X;</p>
+                                    <p>}</p>
+                            <p>}</p>
+                            <p>printf("%d",M1);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>10 20 30 40 60</p>
+                            <p>output:</p>
+                            <p>20</p>

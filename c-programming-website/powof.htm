@@ -1,0 +1,34 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Reverse N digits pow and sum</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>long long int N,g,d,i,S=0;</p>
+                            <p>scanf("%lld",&N);</p>
+                            <p>g=log10(N)+1;</p>
+                            <p>while(N)</p>
+                            <p>{</p>
+                                <p>d=N%10;</p>
+                                <p>S=S+pow(d,g);</p>
+                                <p/>printf("%lld ",S);</p>
+                            <p/>N=N/10;</p>
+                            <p>}</p>
+                        <p>}</p>
+                        <p>input:</p>
+                        <p>1234</p>
+                        <p>output:</p>
+                        <p>256 337 353 354</p>

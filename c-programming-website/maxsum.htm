@@ -1,0 +1,52 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Max sum odd and even tenth digit</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                            <p>int N,i,S1=0,S2=0,d,b;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>int a[N];</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>scanf("%d ",&a[i]);</p>
+                            <p>}</p>
+                            <p>for(i=0;i< N;i++)</p>
+                            <p>{</p>
+                                <p>b=(a[i]%100)/10;</p>
+                                <p>if(b%2==1)</p>
+                                <p>{</p>
+                                    <p>S1=S1+b;</p>
+                                <p>}</p>
+                                <p>else if(b%2==0)</p>
+                                <p>{</p>
+                                    <p>S2=S2+b;</p>
+                                <p>}</p>
+                            <p>}</p>
+                            <p>if(S1>S2)</p>
+                            <p>{</p>
+                                printf("%d",S1);</p>
+                            <p>}</p>
+                            <p>else</p>
+                            <p>{</p>
+                                printf("%d",S2);</p>
+                            <p>}</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>5</p>
+                            <p>10 20 30 40 60</p>
+                            <p>output:</p>
+                            <p>12</p>

@@ -1,0 +1,50 @@
+<html>
+    <style>
+        h1
+        {
+            font-size:40px;
+            font-style:bold;
+        }
+    body{
+        font-size:20px;
+        background-color:lightgrey;
+        font-style:italic;
+    }
+    </style>
+        <body>
+            <center><h1>Convert Seconds into Days,Hours,Minutes</h1></center>
+            <p>#include< stdio.h></p>
+                <p>#include< stdlib.h></p>
+                    <p>int main()</p>
+                    <p>{</p>
+                        <p>int N,s,m,h,d,h1,m1,h2,h3;</p>
+                            <p>scanf("%d",&N);</p>
+                            <p>d=(N/86400);</p>
+                            <p>printf("%dD ",d);</p>
+                            <p>h=(N/60);</p>
+                            <p>h1=h/60;</p>
+                            <p>h2=h1%24;</p>
+                            <p>if(h2>12)</p>
+                            <p>{</p>
+                                <p>h3=h2/12;</p>
+                            <p>}</p>
+                            <p>else</p>
+                            <p>{</p>
+                                <p>h3=h2;</p>
+                            <p>}</p>
+                            <p>m=N/60;</p>
+                            <p>s=N%60;</p>
+                            <p>if(m>60)</p>
+                            <p>{</p>
+                                <p>m1=m%60;</p>
+                            <p>}</p>
+                            <p>else if(m<=60)</p>
+                            <p>{</p>
+                                <p>m1=m;</p>
+                            <p>}</p>
+                            <p>printf("%02d:%02d:%02d",h3,m1,s);</p>
+                            <p>}</p>
+                            <p>input:</p>
+                            <p>360</p>
+                            <p>output:</p>
+                            <p>0D 00:06:00</p>
